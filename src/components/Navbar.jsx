@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { menuLink } from '../helper/Helper'
 import { Fade as Hamburger } from 'hamburger-react'
-import logo from '../assets/logo.jpg'
+
 
 const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false)

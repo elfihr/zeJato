@@ -15,7 +15,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Testimonials = () => {
     return (
-        <div className='py-20 flex flex-col gap- bg-white  text-center' id='testimonials'>
+        <div className='py-20 flex flex-col gap- bg-white  text-center border-slate-700 border-y-2' id='testimonials'>
             <h3 className='text-5xl font-semibold text-sky-500'>Depoimentos</h3>
             <p className='text-3xl mt-3'>Veja a Opnião dos <span className='text-sky-500'>Nossos Clientes</span></p>
             <i className=" fa-solid fa-quote-right text-8xl text-stone-400"></i>

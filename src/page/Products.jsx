@@ -4,7 +4,7 @@ import { prodGall } from '../Helper/Helper'
 
 const Products = () => {
   return (
-    <div style={{backgroundImage: `url(${product})`}} className='bg-cover bg-center bg-no-repeat bg-fixed py-12 gap-4 flex flex-col items-center text-white'>
+    <div style={{backgroundImage: `url(${product})`}} className='bg-cover bg-center bg-no-repeat bg-fixed py-12 gap-4 flex flex-col items-center text-white border-slate-700 border-y-2'>
       <h3 className='text-5xl font-semibold'>Produtos</h3>
       <div className='border-2 border-sky-500 w-20 '></div>
       <p className='text-3xl text-center'>Só Trabalhamos com as <span className='text-sky-500 font-semibold'>Melhores Marcas</span></p>
