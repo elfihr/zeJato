@@ -1,10 +1,15 @@
 
 import './App.css'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import Galery from './page/Galery'
+import Contact from './page/Contact'
+import Gallery from './page/Gallery'
 import Hero from './page/Hero'
 import Price from './page/Price'
+import Products from './page/Products'
+import Promo from './page/Promo'
 import Service from './page/Service'
+import Testimonials from './page/Testimonials'
 
 function App() {
 
@@ -14,7 +19,16 @@ function App() {
       <Navbar />
       <Hero />
       <Service />
-      <Price/>
+      <Promo/>
+      <Price />
+      <Products/>
+      <Gallery/>
+      <Testimonials/>
+      <Contact/>
+      <Footer/>
+
+
+
 
     </>
   )

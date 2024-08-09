@@ -5,24 +5,37 @@ import service04 from "../assets/service/service04.png"
 import service05 from "../assets/service/service05.png"
 import service06 from "../assets/service/service06.png"
 
-import price01 from '../assets/price01.jpg'
-import price02 from '../assets/price02.jpg'
-import price03 from '../assets/price03.jpg'
-import price04 from '../assets/price04.jpg'
+import price01 from '../assets/price01.webp'
+import price02 from '../assets/price02.webp'
+import price03 from '../assets/price03.webp'
+import price04 from '../assets/price04.webp'
 
-import gal01 from '../assets/gallery/gallery01.jpg'
-import gal02 from '../assets/gallery/gallery02.jpg'
-import gal03 from '../assets/gallery/gallery03.jpg'
-import gal04 from '../assets/gallery/gallery04.jpg'
-import gal05 from '../assets/gallery/gallery05.jpg'
-import gal06 from '../assets/gallery/gallery06.jpg'
-import gal07 from '../assets/gallery/gallery07.jpg'
-import gal08 from '../assets/gallery/gallery08.jpg'
-import gal09 from '../assets/gallery/gallery09.jpg'
-import gal10 from '../assets/gallery/gallery10.jpg'
-import gal11 from '../assets/gallery/gallery11.jpg'
-import gal12 from '../assets/gallery/gallery12.jpg'
+import gal01 from '../assets/gallery/gallery01.webp'
+import gal02 from '../assets/gallery/gallery02.webp'
+import gal03 from '../assets/gallery/gallery03.webp'
+import gal04 from '../assets/gallery/gallery04.webp'
+import gal05 from '../assets/gallery/gallery05.webp'
+import gal06 from '../assets/gallery/gallery06.webp'
+import gal07 from '../assets/gallery/gallery07.webp'
+import gal08 from '../assets/gallery/gallery08.webp'
+import gal09 from '../assets/gallery/gallery09.webp'
+import gal10 from '../assets/gallery/gallery10.webp'
+import gal11 from '../assets/gallery/gallery11.webp'
+import gal12 from '../assets/gallery/gallery12.webp'
 
+import client01 from '../assets/testimonials/client01.webp'
+import client02 from '../assets/testimonials/client02.webp'
+import client03 from '../assets/testimonials/client03.webp'
+import client04 from '../assets/testimonials/client04.webp'
+
+import prod01 from '../assets/Products/prod01.png'
+import prod02 from '../assets/Products/prod02.png'
+import prod03 from '../assets/Products/prod03.png'
+import prod04 from '../assets/Products/prod04.png'
+import prod05 from '../assets/Products/prod05.png'
+import prod06 from '../assets/Products/prod06.png'
+import prod07 from '../assets/Products/prod07.png'
+import prod08 from '../assets/Products/prod08.webp'
 
 export const menuLink = [
     {
@@ -44,6 +57,16 @@ export const menuLink = [
         label:'Galeria',
         class:'link',
         href:'#gallery'
+    },
+    {
+        label:'Depoimentos',
+        class:'link',
+        href:'#testimonials'
+    },
+    {
+        label:'Contato',
+        class:'link',
+        href:'#contact'
     }
 ]
 
@@ -51,12 +74,12 @@ export const services = [
     {
           img:service01,
         name:'Troca de Óleo',
-        description:'Serviço de troca de óleo, garantidndo o perfeito funcionamento do seu veículo'
+        description:'Serviço de troca de óleo, garantindo o perfeito funcionamento do seu veículo'
     },
     {
         img:service02,
         name:'Lavagem Rápida',
-        description:'avagem eficiente para quem tem pouco tempo, garantindo limpeza básica.'
+        description:'Lavagem eficiente para quem tem pouco tempo, garantindo limpeza básica.'
     },
     {
         
@@ -72,11 +95,11 @@ export const services = [
     {
         img:service05,
         name:'Calibragem de Freios',
-        description:'Regulamos e fazemos troca de pastilhas dos Freios.'
+        description:'Regulamos e fazemos troca de pastilhas dos freios.'
     },{
         img:service06,
         name:'Polimento e Enceramento',
-        description:'Polimento para remoção de riscos superficiais e marcas lém de brilho e proteção.'
+        description:'Polimento para remoção de riscos superficiais e marcas além de brilho e proteção.'
     },
 ]
 
@@ -109,52 +132,117 @@ export const prices = [
 
 export const carGallery = [
     {
-        img:gal01,
-        category:'Limpeza'
+        id:0,
+        image:gal01,
+        title:'Limpeza'
     },
     {
-        img:gal02,
-        category:'Limpeza'
+        id:1,
+        image:gal02,
+        title:'Limpeza'
     },
     {
-        img:gal03,
-        category:'Manutenção'
+        id:2,
+        image:gal03,
+        title:'Manutenção'
     },
     {
-        img:gal04,
-        category:'Manutenção'
+        id:3,
+        image:gal04,
+        title:'Manutenção'
     }
     ,{
-        img:gal05,
-        category:'Ferramentas'
+        id:4,
+        image:gal05,
+        title:'Ferramentas'
     },
     {
-        img:gal06,
-        category:'Ferramentas'
+        id:5,
+        image:gal06,
+        title:'Ferramentas'
     },
     {
-        img:gal07,
-        category:'Pintura'
+        id:6,
+        image:gal07,
+        title:'Pintura'
     },
     {
-        img:gal08,
-        category:'Pintura'
+        id:7,
+        image:gal08,
+        title:'Pintura'
     },
     {
-        img:gal09,
-        category:'Carros'
+        id:8,
+        image:gal09,
+        title:'Carros'
     },
     {
-        img:gal10,
-        category:'Carros'
+        id:9,
+        image:gal10,
+        title:'Carros'
     },
     {
-        img:gal11,
-        category:'Carros'
+        id:10,
+        image:gal11,
+        title:'Carros'
     },
     {
-        img:gal12,
-        category:'Carros'
+        id:11,
+        image:gal12,
+        title:'Carros'
     }
 
+]
+
+export const testimonials = [
+
+    {
+        description:'Levei meu carro para uma revisão completa e lavagem, e fiquei impressionado com a eficiência da equipe. Em poucas horas, meu carro estava como novo, tanto por dentro quanto por fora. Definitivamente voltarei!.',
+        img:client01,
+        name:'Paulo Cesar',
+
+    },
+    {
+        description:'O pessoal do Zé a Jato foi extremamente atencioso e explicou todos os detalhes do serviço necessário para o meu carro. Além disso, o resultado da lavagem foi impecável. Recomendo a todos!.',
+        img:client02,
+        name:'Magda Motta'
+    },
+    {
+        description:'Fiquei muito satisfeito com o custo-benefício dos serviços oferecidos. Além de resolverem o problema mecânico rapidamente, o carro saiu do lava-jato com um brilho incrível. Não poderia estar mais feliz!',
+        img:client03,
+        name:'Ruan de Andrade'
+    },
+    {
+        description:'Já usei outros serviços antes, mas o Zé a Jato se destaca pelo profissionalismo e confiabilidade. Sempre sinto que meu carro está em boas mãos. A equipe é fantástica!',
+        img:client04,
+        name:'Jose Felizardo'
+    },
+
+]
+
+export const prodGall = [
+    {
+        name:prod01,
+    },
+    {
+        name:prod02,
+    },
+    {
+        name:prod03,
+    },
+    {
+        name:prod04,
+    },
+    {
+        name:prod05,
+    },
+    {
+        name:prod06,
+    },
+    {
+        name:prod07,
+    },
+    {
+        name:prod08,
+    }
 ]

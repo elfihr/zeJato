@@ -1,36 +1,75 @@
-import React from 'react'
-import service from '../assets/price.jpg'
+import React, { useState } from 'react'
+import { prices } from '../Helper/Helper'
+import Slider from "react-slick";
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-//==================Import Swiper styles==================
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-// import required modules
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import { prices } from '../Helper/Helper';
 
 const Price = () => {
-    return (
-        <section style={{ backgroundImage: `url(${service})` }} className='w-full h-auto bg-cover bg-no-repeat bg-center py-28 bg-fixed flex flex-col justify-center text-center'>
-            <h3 className='text-white text-6xl uppercase font-bold '>Nossos Preços</h3>
-            <div className='mt-20 flex flex-wrap gap-8 justify-around max-xl:px-40 max-lg:px-20 max-md:px-2'>
-                {prices.map((itens,index) => {
-                    return(
-                        <div className='text-white relative bg-slate-500 flex flex-col'>
-                            <img className='w-72 h-56' src={itens.img} alt='service'/>
-                            <p className='absolute top-2 left-2 text-1xl bg-sky-500 opacity-80'>R$ {itens.value}</p>
-                            <div className='w-72 h-72 flex flex-col gap-4 items-center justify-between py-4'>
-                                <h3 className='text-2xl'>{itens.name}</h3>
-                                <p>{itens.description}</p>
-                                <button className='border-2 b-white w-40 py-2 hover:bg-sky-500 duration-300'>Entre em Contato</button>
-                            </div>
-                        </div>
-                    )
-                })}
-            </div>
-        </section>
-    )
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1010,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  return (
+    <section className='w-3/4  max-xl:w-10/12  m-auto pb-12' id='price'>
+      <h3 className='text-sky-500 text-5xl pt-12 text-center font-semibold'>Preços e <span className='text-white'>Serviços</span></h3>
+
+      <div className='mt-12'>
+        <Slider {...settings}>
+          {prices.map((item, index) => {
+            return (
+              <div className='bg-slate-500 h-[500px] text-black rounded-xl ' key={index}>
+                <div className='h-56 flex justify-center items-center'>
+                  <img className='h-full w-full ' src={item.img} alt='' />
+                  <p className='absolute bg-sky-400 top-2 p-2  opacity-85 text-white'>R${item.value}</p>
+                </div>
+
+                <div className='flex h-72 flex-col justify-around items-center p-2 text-white'>
+                  <p className='text-xl font-white font-semibold'>{item.name}</p>
+                  <p>{item.description}</p>
+                  <button className='border-2 b-white w-40 py-2 hover:bg-sky-500 duration-300'>Leia Mais</button>
+                </div>
+              </div>
+            )
+
+          })}
+        </Slider>
+      </div>
+    </section>
+  )
 }
 
 export default Price
