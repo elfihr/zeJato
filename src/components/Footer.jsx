@@ -1,5 +1,5 @@
 import React from 'react'
-import { menuLink } from '../Helper/Helper'
+import { menuLink } from '../helper/Helper'
 
 const Footer = () => {
     return (

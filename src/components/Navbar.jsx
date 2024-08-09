@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { menuLink } from '../Helper/Helper'
+import { menuLink } from '../helper/Helper'
 import { Fade as Hamburger } from 'hamburger-react'
 import logo from '../assets/logo.jpg'
 
