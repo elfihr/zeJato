@@ -54,7 +54,7 @@ const Price = () => {
               <div className='bg-slate-500 h-[500px] text-black rounded-xl ' key={index}>
                 <div className='h-56 flex justify-center items-center'>
                   <img className='h-full w-full ' src={item.img} alt='' />
-                  <p className='absolute bg-sky-400 top-2 p-2  opacity-85 text-white'>R${item.value}</p>
+             
                 </div>
 
                 <div className='flex h-72 flex-col justify-around items-center p-2 text-white'>
