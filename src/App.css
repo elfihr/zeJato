@@ -75,6 +75,7 @@ border:2px solid #38b8f3;
 
 @media(max-width:670px) {
 
+
   .inputContainer {
       flex-direction: column;
   }
