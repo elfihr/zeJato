@@ -21,16 +21,24 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      
+
       <Service />
-      <FloatingWhatsApp avatar={profile} accountName={'Zeca'} chatMessage={'Ola, Tudo bem? Como posso ajudar?'} statusMessage={'Socio do Zé a Jato'}/>
-      <Promo/>
+      <FloatingWhatsApp
+        avatar={profile}
+        accountName={'Zeca'}
+        chatMessage={'Ola, Tudo bem? Posso ajudar Você?'}
+        statusMessage={'Socio do Zé a Jato'}
+        notification={true}
+        notificationDelay={10}
+        placeholder={'Mensagem'}
+        />
+      <Promo />
       <Price />
-      <Products/>
-      <Gallery/>
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
+      <Products />
+      <Gallery />
+      <Testimonials />
+      <Contact />
+      <Footer />
 
 
 

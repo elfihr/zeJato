@@ -3,8 +3,8 @@ import hero from '../assets/hero.webp'
 
 const Hero = () => {
   return (
-    <section id='home' style={{ backgroundImage: `url(${hero})` }} className='w-full h-screen bg-cover bg-center bg-no-repeat bg-fixed flex items-center border-slate-700 border-b-2 max-sm:bg-scroll'>
-      <div className='text-white m-24 max-sm:m-12 flex flex-col gap-4 ' >
+    <section id='home' style={{ backgroundImage: `url(${hero})` }} className='h-[120vh] py-20 w-full h-screen bg-cover bg-center bg-no-repeat bg-fixed flex items-center border-slate-700 border-b-2 max-sm:bg-scroll max-sm:h-auto'>
+      <div className='text-white ml-24 max-sm:ml-12 flex flex-col gap-4 ' >
         <p className='text-4xl max-sm:text-2xl mt-12'>Lava-Jato e Mecânica</p>
         <div className='border-b-4 w-40 border-sky-500'></div>
         <h3 className='text-5xl max-sm:text-3xl'>Brilho e limpeza <br />que fazem a diferença</h3>
