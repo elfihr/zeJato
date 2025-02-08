@@ -11,15 +11,22 @@
 .logoF{
   font-family: "Russo One", sans-serif;
 }
-
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /*react-slick*/
 .slick-slide > div{
   margin: 0 .6rem;
 }
+
+
 
 body{
   background-color: #151515;

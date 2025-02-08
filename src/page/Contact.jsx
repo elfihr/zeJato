@@ -5,7 +5,7 @@ const Contact = () => {
         <div className='flex flex-col items-center justify-center py-12 text-white ' id='contact'>
             <h3 className='text-5xl font-semibold text-sky-500 text-center'>Dúvidas?</h3>
             <p className='text-3xl my-8 text-center'>Mande uma <span className='text-sky-500'>Mensagem para Gente!</span></p>
-            <form method='POST' className='flex flex-col gap-4 items-center'>
+            <form method='POST' className='flex flex-col gap-4 items-center text-black'>
                 <div className='flex gap-4 inputContainer'>
                     <input type='name' placeholder='Nome Completo*' required></input>
                     <input type='email' placeholder='E-mail*' required></input>
