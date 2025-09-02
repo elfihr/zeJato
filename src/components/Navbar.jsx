@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <nav className={color ?
-            'fixed top-0 left-0 flex justify-between w-full py-5 px-16 max-sm:px-8 items-center bg-white duration-300 z-20 border-b-2 border-slate-300'
+            'fixed top-0 left-0 flex justify-between w-full py-5 px-16 max-sm:px-8 items-center bg-white duration-300 z-20 shadow-2xl'
             :
             'fixed top-0 left-0 flex justify-between w-full py-5 px-16 max-sm:px-8 items-center text-white duration-300 z-20 max-lg:bg-white'}
         >

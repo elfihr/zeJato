@@ -12,7 +12,7 @@ import Service from './page/Service'
 import Testimonials from './page/Testimonials'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
-import profile from './assets/whatsProfile.jpg'
+import profile from './assets/whatsProfile.webp'
 
 function App() {
 

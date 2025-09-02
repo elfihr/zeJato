@@ -1,9 +1,9 @@
-import service01 from "../assets/service/service01.jpg"
-import service02 from "../assets/service/service02.jpg"
-import service03 from "../assets/service/service03.jpg"
-import service04 from "../assets/service/service04.png"
-import service05 from "../assets/service/service05.png"
-import service06 from "../assets/service/service06.png"
+import service01 from "../assets/service/service01.webp"
+import service02 from "../assets/service/service02.webp"
+import service03 from "../assets/service/service03.webp"
+import service04 from "../assets/service/service04.webp"
+import service05 from "../assets/service/service05.webp"
+import service06 from "../assets/service/service06.webp"
 
 import price01 from '../assets/price01.webp'
 import price02 from '../assets/price02.webp'
@@ -28,13 +28,13 @@ import client02 from '../assets/testimonials/client02.webp'
 import client03 from '../assets/testimonials/client03.webp'
 import client04 from '../assets/testimonials/client04.webp'
 
-import prod01 from '../assets/Products/prod01.png'
-import prod02 from '../assets/Products/prod02.png'
-import prod03 from '../assets/Products/prod03.png'
-import prod04 from '../assets/Products/prod04.png'
-import prod05 from '../assets/Products/prod05.png'
-import prod06 from '../assets/Products/prod06.png'
-import prod07 from '../assets/Products/prod07.png'
+import prod01 from '../assets/Products/prod01.webp'
+import prod02 from '../assets/Products/prod02.webp'
+import prod03 from '../assets/Products/prod03.webp'
+import prod04 from '../assets/Products/prod04.webp'
+import prod05 from '../assets/Products/prod05.webp'
+import prod06 from '../assets/Products/prod06.webp'
+import prod07 from '../assets/Products/prod07.webp'
 import prod08 from '../assets/Products/prod08.webp'
 
 export const menuLink = [

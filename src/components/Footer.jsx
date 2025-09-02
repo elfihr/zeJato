@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='w-full bg-white py-12 text-center flex flex-col items-center'>
 
-            <p>Copyright &copy; Zé a Jato - a Fihr Site</p>
+            <p>Copyright &copy; Zé a Jato - a Lue Site</p>
 
             <div className='grid grid-cols-3 max-md:grid-cols-1 justify-around gap-12 text-start px-36 mt-4 max-sm:px-4 '>
 
